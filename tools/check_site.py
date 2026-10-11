@@ -47,12 +47,13 @@ def published_files():
             yield from (f for f in p.rglob("*") if f.is_file())
 
 
-def resolve(link):
+def resolve(page, link):
     path = link.split("#")[0].split("?")[0]
     if not path:
         return True
-    target = ROOT / path.lstrip("/")
-    if path.endswith("/"):
+    base = ROOT if path.startswith("/") else page.parent
+    target = (base / path.lstrip("/")).resolve()
+    if path.endswith("/") or target.is_dir():
         target = target / "index.html"
     return target.exists()
 
@@ -69,8 +70,8 @@ def main():
                 line = text.count("\n", 0, m.start()) + 1
                 errors.append(f"{rel}:{line}: {label}: {m.group(0)[:40]!r}")
         if f.suffix == ".html":
-            for link in re.findall(r'(?:href|src)="(/[^"]*)"', text):
-                if not resolve(link):
+            for link in re.findall(r'(?:href|src)="(?!https?:|mailto:|#)([^"]+)"', text):
+                if not resolve(f, link):
                     errors.append(f"{rel}: broken internal link {link}")
     for e in errors:
         print(e)
