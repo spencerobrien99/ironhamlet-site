@@ -321,3 +321,10 @@ details.faq p { color: var(--text-muted); margin: 12px 0 0; }
 
 .page-hero .lead { color: var(--muted-on-dark); }
 .page-hero .eyebrow { color: var(--accent-on-dark); }
+
+table.compare td:first-child { font-family: var(--font); font-weight: 600; color: var(--text); white-space: nowrap; }
+table.compare td:nth-child(2) { font-weight: 400; white-space: normal; color: var(--text-muted); }
+@media (max-width: 640px) {
+  table.compare td[data-label]::before { content: attr(data-label) ": "; font-weight: 600; color: var(--text); }
+  table.compare td:first-child { font-size: 1rem; margin-bottom: 4px; }
+}
