@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronHamlet | Industrial Cybersecurity Exercises on a Live Plant</title>
+  <meta name="description" content="IronHamlet is an instructor-led industrial cybersecurity exercise. Teams defend a PLC-controlled water-treatment process against live attacks, investigate captured evidence, and review an after-action report.">
+  <link rel="canonical" href="https://ironhamlet.com/">
+  <meta name="theme-color" content="#0c141d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IronHamlet">
+  <meta property="og:title" content="IronHamlet | Industrial Cybersecurity Exercises on a Live Plant">
+  <meta property="og:description" content="Train your team to respond to an attack on a running industrial process, then investigate the evidence and review what happened.">
+  <meta property="og:url" content="https://ironhamlet.com/">
+  <meta property="og:image" content="https://ironhamlet.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IronHamlet: industrial cybersecurity exercises on a live plant">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IronHamlet | Industrial Cybersecurity Exercises on a Live Plant">
+  <meta name="twitter:description" content="Train your team to respond to an attack on a running industrial process, then investigate the evidence and review what happened.">
+  <meta name="twitter:image" content="https://ironhamlet.com/assets/img/og-image.png">
+  <link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IronHamlet",
+    "url": "https://ironhamlet.com/",
+    "logo": "https://ironhamlet.com/assets/img/apple-touch-icon.png",
+    "description": "Instructor-led industrial cybersecurity exercises on a live, PLC-controlled process."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="IronHamlet home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#16222e"/><path d="M14 14h11v14h14V14h11v36H39V36H25v14H14z" fill="#2b7bcc"/><path d="M25 28h14v8H25z" fill="#5ea6ee"/></svg>
+        <span class="brand-name">IRONHAMLET</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="/platform/">Platform</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/pilot/">Pilot Program</a>
+        <a class="btn btn-primary" href="/contact/">Request a Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero dark">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Industrial cybersecurity exercises</p>
+          <h1>Train your team on a live industrial plant under attack.</h1>
+          <p class="lead">IronHamlet puts your security and operations staff in front of a running, PLC-controlled water-treatment process. They watch it operate, respond as an attack unfolds against the controller, investigate the captured evidence, and review the outcome in a structured after-action report.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="/contact/">Request a Demo</a>
+            <a class="btn btn-secondary" href="/platform/">Explore the Platform</a>
+          </div>
+        </div>
+
+        <figure class="schematic mt-0 mb-0">
+          <svg viewBox="0 0 520 360" role="img" aria-labelledby="schem-title schem-desc">
+            <title id="schem-title">Exercise plant schematic</title>
+            <desc id="schem-desc">A two-tank water-treatment process controlled by a PLC. The operator display shows a false high level for Tank 0 while the field instrument reads normal, and network evidence is captured for investigation.</desc>
+            <defs>
+              <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f8fe0"/><stop offset="1" stop-color="#1f5f9f"/></linearGradient>
+            </defs>
+            <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#9aabbb" letter-spacing=".08em">
+              <text x="16" y="22">PROCESS</text>
+              <text x="16" y="206">CONTROL</text>
+              <text x="16" y="296">EVIDENCE</text>
+            </g>
+            <!-- process -->
+            <line x1="16" y1="70" x2="64" y2="70" stroke="#3c5266" stroke-width="3"/>
+            <rect x="64" y="40" width="96" height="120" rx="6" fill="none" stroke="#5c7387" stroke-width="2"/>
+            <rect x="66" y="98" width="92" height="60" rx="4" fill="url(#water)"/>
+            <text x="112" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#e8edf2">TANK 0</text>
+            <path d="M160 140 H226" stroke="#3c5266" stroke-width="3"/>
+            <circle cx="193" cy="140" r="9" fill="#121d29" stroke="#5c7387" stroke-width="2"/>
+            <rect x="226" y="40" width="96" height="120" rx="6" fill="none" stroke="#5c7387" stroke-width="2"/>
+            <rect x="228" y="102" width="92" height="56" rx="4" fill="url(#water)"/>
+            <text x="274" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#e8edf2">TANK 1</text>
+            <path d="M322 140 H360" stroke="#3c5266" stroke-width="3"/>
+            <circle cx="341" cy="140" r="9" fill="#121d29" stroke="#d4543f" stroke-width="2"/>
+            <text x="341" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#d4543f">FORCED</text>
+            <!-- HMI -->
+            <rect x="380" y="36" width="124" height="128" rx="6" fill="#0c141d" stroke="#253545"/>
+            <text x="392" y="56" font-family="IBM Plex Mono, monospace" font-size="9" fill="#9aabbb" letter-spacing=".1em">OPERATOR HMI</text>
+            <text x="392" y="80" font-family="IBM Plex Mono, monospace" font-size="10" fill="#9aabbb">TK0 LEVEL</text>
+            <text x="392" y="102" font-family="IBM Plex Sans, sans-serif" font-size="22" font-weight="600" fill="#e2a72e">950</text>
+            <rect x="446" y="88" width="48" height="18" rx="9" fill="none" stroke="#e2a72e"/>
+            <text x="470" y="101" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#e2a72e">HIGH</text>
+            <text x="392" y="128" font-family="IBM Plex Mono, monospace" font-size="10" fill="#9aabbb">FIELD READ</text>
+            <text x="392" y="150" font-family="IBM Plex Sans, sans-serif" font-size="22" font-weight="600" fill="#2f9e6e">437</text>
+            <!-- control -->
+            <rect x="64" y="190" width="258" height="44" rx="6" fill="#121d29" stroke="#253545"/>
+            <text x="80" y="217" font-family="IBM Plex Mono, monospace" font-size="11" fill="#e8edf2">PLC  ·  interlock logic  ·  Modbus TCP</text>
+            <path d="M112 160 V190 M274 160 V190" stroke="#2b7bcc" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <path d="M322 212 H442 V164" stroke="#2b7bcc" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+            <!-- evidence -->
+            <rect x="64" y="262" width="440" height="80" rx="6" fill="#121d29" stroke="#253545"/>
+            <g font-family="IBM Plex Mono, monospace" font-size="10">
+              <text x="80" y="286" fill="#9aabbb">time       source       function      register  result</text>
+              <text x="80" y="306" fill="#e8edf2">+00:00.0   controller   write single  5         routine</text>
+              <text x="80" y="326" fill="#d4543f">+00:01.9   unexpected   write single  5         ATTACK</text>
+            </g>
+            <path d="M193 234 V262" stroke="#2b7bcc" stroke-width="1.5" stroke-dasharray="3 3"/>
+          </svg>
+          <figcaption>Illustration: the plant, its controller, and the evidence your team investigates.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Industrial incidents are operational problems first.</h2>
+          <p class="lead">When an industrial controller is attacked, the questions that matter are about the process: is the plant safe, can the operator display be trusted, and what should the team do without making things worse. Those judgements take practice, and most security training never puts a running process in front of the people who will have to make them.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+            <h3>A process that keeps running</h3>
+            <p>Tank levels rise and fall, valves cycle, and safety interlocks act under real control logic. The incident happens while the plant operates, just as it would on shift.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>Screens that can mislead</h3>
+            <p>Some attacks change the process. Others change only what the operator sees. Teams learn to cross-check the field before they act on a reading.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
+            <h3>Evidence you can query</h3>
+            <p>Industrial network traffic is captured during each run and made searchable. Commands sent from the attacker workspace appear alongside the controller's own traffic, attributed to their source.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Exercise scenarios</p>
+          <h2>Two distinct lessons in industrial incident response.</h2>
+          <p class="lead">Each scenario is launched by the instructor against the running plant, then reset to a verified known-good state before the next one begins.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card scenario">
+            <span class="tag tag-alarm">Unauthorized command</span>
+            <h3>The valve that should not open</h3>
+            <p>An attacker forces a tank's discharge valve open while the tank sits in its safe operating band. The team watches the controller's interlock respond, determines whether the process was harmed, and uses the captured control traffic to show that the interlock held.</p>
+            <p class="lesson"><strong>Lesson</strong>How a safety interlock behaves under attack, and how to prove whether a physical consequence occurred.</p>
+          </article>
+          <article class="card scenario view">
+            <span class="tag tag-signal">Manipulation of view</span>
+            <h3>False readings on the operator display</h3>
+            <p>An attacker holds a false near-overflow reading on the operator display while the real tank level is normal. The team must recognize the deception by cross-checking the field, and avoid a disruptive over-reaction to a plant that is running normally.</p>
+            <p class="lesson"><strong>Lesson</strong>Treat the HMI as one source of truth, not the only one. Verify before you act.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>One exercise loop, run end to end.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Access the environment</h3>
+            <p>Participants open the operator HMI, exercise console, and investigation tools in a web browser. The instructor facilitates the session.</p>
+          </li>
+          <li>
+            <h3>Observe the process</h3>
+            <p>The team learns what normal looks like: operating bands, valve cadence, and the controller's routine traffic.</p>
+          </li>
+          <li>
+            <h3>Work the scenario</h3>
+            <p>An attack is launched against the running plant. The team observes the symptoms and decides whether the process is actually at risk.</p>
+          </li>
+          <li>
+            <h3>Analyze the evidence</h3>
+            <p>Operational readings and captured industrial network traffic are examined together to reconstruct what happened and when.</p>
+          </li>
+          <li>
+            <h3>Review the results</h3>
+            <p>An after-action report summarizes the attack, the process impact, the evidence, and the scoring, and anchors the debrief.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Platform</p>
+          <h2>Built from the components real plants use.</h2>
+          <p class="lead">IronHamlet combines a simulated industrial process, a programmable logic controller, an operator HMI, and a security telemetry pipeline into a single exercise environment.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card"><h3>Simulated process</h3><p>A two-tank water-treatment plant with level instrumentation, valves, and interlocks.</p></div>
+          <div class="card"><h3>OpenPLC controller</h3><p>Compiled control logic running on an OpenPLC runtime, communicating over Modbus TCP.</p></div>
+          <div class="card"><h3>FUXA operator HMI</h3><p>A browser-based operator display with live levels, valve states, alarms, and a message feed.</p></div>
+          <div class="card"><h3>OpenSearch telemetry</h3><p>Industrial network traffic captured during each run and made searchable for investigation.</p></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="/platform/">See all platform capabilities</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Pilot program</p>
+            <h2>A one-day guided pilot for your team.</h2>
+            <p class="lead">Up to five participants work two live scenarios with an instructor, from plant orientation through a consolidated after-action review.</p>
+            <ul class="checks">
+              <li>Plant orientation and baseline of normal operations</li>
+              <li>Two live incident scenarios with guided debriefs</li>
+              <li>Evidence investigation in the telemetry console</li>
+              <li>Team after-action review and written report</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="/pilot/">View pilot details</a>
+            </div>
+          </div>
+          <div class="dark" style="border-radius:10px;padding:28px">
+            <dl class="facts">
+              <div><dt>Format</dt><dd>1 day</dd></div>
+              <div><dt>Team</dt><dd>Up to 5</dd></div>
+              <div><dt>Scenarios</dt><dd>2 live</dd></div>
+              <div><dt>Proposed</dt><dd>$2,500</dd></div>
+            </dl>
+            <p class="note" style="margin:20px 0 0">Pilot pricing is proposed. Availability and final commercial terms are confirmed in writing before any engagement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <div>
+          <h2>See IronHamlet run.</h2>
+          <p>Request a guided demonstration of the plant, a live scenario, and the after-action report.</p>
+        </div>
+        <a class="btn btn-primary" href="/contact/">Request a Demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="/" aria-label="IronHamlet home">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#16222e"/><path d="M14 14h11v14h14V14h11v36H39V36H25v14H14z" fill="#2b7bcc"/><path d="M25 28h14v8H25z" fill="#5ea6ee"/></svg>
+          <span class="brand-name">IRONHAMLET</span>
+        </a>
+        <p style="margin-top:14px">Instructor-led industrial cybersecurity exercises on a live, PLC-controlled process.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/pilot/">Pilot Program</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="/contact/">Request a Demo</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <p class="legal">&copy; <span id="year">2026</span> IronHamlet. OpenPLC, FUXA, OpenSearch, and MITRE ATT&amp;CK are the property of their respective owners and are referenced descriptively.</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

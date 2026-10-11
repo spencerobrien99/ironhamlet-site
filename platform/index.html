@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronHamlet Platform | Exercise Environment and Capabilities</title>
+  <meta name="description" content="The IronHamlet exercise environment: a simulated water-treatment process, OpenPLC controller, FUXA operator HMI, attack scenarios, OpenSearch security telemetry, reset to known-good, and after-action reporting.">
+  <link rel="canonical" href="https://ironhamlet.com/platform/">
+  <meta name="theme-color" content="#0c141d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IronHamlet">
+  <meta property="og:title" content="IronHamlet Platform | Exercise Environment and Capabilities">
+  <meta property="og:description" content="The IronHamlet exercise environment: a simulated water-treatment process, OpenPLC controller, FUXA operator HMI, attack scenarios, OpenSearch security telemetry, reset to known-good, and after-action reporting.">
+  <meta property="og:url" content="https://ironhamlet.com/platform/">
+  <meta property="og:image" content="https://ironhamlet.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IronHamlet: industrial cybersecurity exercises on a live plant">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IronHamlet Platform | Exercise Environment and Capabilities">
+  <meta name="twitter:description" content="The IronHamlet exercise environment: a simulated water-treatment process, OpenPLC controller, FUXA operator HMI, attack scenarios, OpenSearch security telemetry, reset to known-good, and after-action reporting.">
+  <meta name="twitter:image" content="https://ironhamlet.com/assets/img/og-image.png">
+  <link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="IronHamlet home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#16222e"/><path d="M14 14h11v14h14V14h11v36H39V36H25v14H14z" fill="#2b7bcc"/><path d="M25 28h14v8H25z" fill="#5ea6ee"/></svg>
+        <span class="brand-name">IRONHAMLET</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="/platform/" aria-current="page">Platform</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/pilot/">Pilot Program</a>
+        <a class="btn btn-primary" href="/contact/">Request a Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Platform</p>
+        <h1>One exercise environment, three views of the same incident.</h1>
+        <p class="lead">Participants see the plant the way a real control room does: the process itself, the control layer that runs it, and the evidence left behind on the network.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <figure class="shot">
+          <div class="frame">
+            <div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <img src="/assets/img/exercise-console.png" width="1440" height="1000" loading="lazy" alt="IronHamlet exercise console showing the incident chooser with two scenarios, a Launch Scenario control, and a Reset / Verify Plant control.">
+          </div>
+          <figcaption>The exercise console, where the instructor selects an incident, launches it against the running plant, and returns the plant to a verified known-good state.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">What participants work with</p>
+          <h2>The process, the controller, and the evidence.</h2>
+          <ul class="checks">
+            <li><strong>The process:</strong> a two-tank water-treatment plant with level instrumentation, fill and discharge valves, and safety interlocks, rendered in 3D.</li>
+            <li><strong>The control layer:</strong> compiled PLC logic running the plant over Modbus TCP, with an operator HMI showing levels, valve states, alarms, and messages.</li>
+            <li><strong>The evidence layer:</strong> captured industrial network traffic in a searchable store, plus a run record and after-action report for every scenario.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Capabilities</p>
+          <h2>What the platform does today.</h2>
+          <p class="lead">Each capability below is implemented in the current release and has been exercised on the running plant.</p>
+        </div>
+        <div class="grid-2" style="gap:0 56px">
+          <div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/></svg></div>
+              <div>
+                <h3>Browser-accessible exercises</h3>
+                <p>The operator HMI, the exercise console, and the investigation tools all open in a standard web browser.</p>
+                <p class="benefit"><b>For your team:</b> no plant hardware or specialist software to install on participant machines.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3v10a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V3M15 9h3v12M6 21h6"/></svg></div>
+              <div>
+                <h3>Simulated industrial process</h3>
+                <p>A two-tank water-treatment plant with an intake tank and a distribution tank. Levels rise and fall and valves cycle under closed-loop control.</p>
+                <p class="benefit"><b>For your team:</b> practice reading a process that behaves like a process, not a scripted animation.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+              <div>
+                <h3>OpenPLC controller interactions</h3>
+                <p>The plant is run by compiled control logic on an OpenPLC runtime over Modbus TCP, including interlocks that correct unsafe valve states.</p>
+                <p class="benefit"><b>For your team:</b> see how real control logic responds when an attacker issues commands it would never issue itself.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 12l3-3 3 2 4-4M8 20h8"/></svg></div>
+              <div>
+                <h3>FUXA operator HMI</h3>
+                <p>A browser-based operator display with tank levels, valve states, a process-flow schematic, alarms, and a live incident message feed.</p>
+                <p class="benefit"><b>For your team:</b> the operator's view is part of the exercise, including when that view is the target.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M12 8v5M12 16h.01"/></svg></div>
+              <div>
+                <h3>Attack and investigation workflows</h3>
+                <p>Instructor-launched scenarios run against the live plant. An isolated, browser-launched attacker workspace is available for guided offensive demonstrations.</p>
+                <p class="benefit"><b>For your team:</b> rehearse the full loop from symptom to evidence to recommendation.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M8 11h6"/></svg></div>
+              <div>
+                <h3>OpenSearch security telemetry</h3>
+                <p>Modbus and network traffic is captured with Zeek during each run and shipped into OpenSearch, where it can be queried and filtered in a dashboard.</p>
+                <p class="benefit"><b>For your team:</b> investigate with the same kind of evidence an OT security team relies on.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></svg></div>
+              <div>
+                <h3>Scenario execution and reset</h3>
+                <p>Scenarios launch from the exercise console. Reset independently checks valves, levels, and controller health, and returns the plant to a known-good state.</p>
+                <p class="benefit"><b>For your team:</b> every incident starts from the same verified baseline.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></div>
+              <div>
+                <h3>Structured after-action reporting</h3>
+                <p>Each run produces an after-action report: an executive summary, the exercise timeline, the attack and controller response, MITRE ATT&amp;CK for ICS mapping, scoring, and an instructor assessment checklist.</p>
+                <p class="benefit"><b>For your team:</b> a written record that anchors the debrief and outlasts the day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">After-action report</p>
+          <h2>Separating what the attacker did from what the process suffered.</h2>
+          <p class="lead">A write that is accepted by the controller is not the same as a plant that was harmed. The after-action report keeps the two apart, so the team's conclusions rest on evidence.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Executive summary</h3>
+            <p>Whether the attack was accepted at the protocol level, whether any process consequence was observed, and how the controller responded.</p>
+          </div>
+          <div class="card">
+            <h3>Timeline and evidence</h3>
+            <p>Exercise messages in the order they fired, the attempted attack, the controller's correction, and the captured network evidence.</p>
+          </div>
+          <div class="card">
+            <h3>Scoring and assessment</h3>
+            <p>Objective criteria computed from the run record, kept separate from instructor-assessed decision quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Current scope</p>
+          <h2>What to expect from this release.</h2>
+          <p class="lead">IronHamlet is early-stage. These are the boundaries of what we offer today.</p>
+        </div>
+        <ul class="checks">
+          <li>One standard exercise plant: a two-tank water-treatment process.</li>
+          <li>Two primary scenarios: unauthorized command and manipulation of view.</li>
+          <li>Exercises are instructor-facilitated. Self-service operation is not offered.</li>
+          <li>Delivery logistics, including remote or on-site facilitation, are agreed for each engagement.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="cta-band">
+      <div class="container">
+        <div>
+          <h2>See IronHamlet run.</h2>
+          <p>Request a guided demonstration of the plant, a live scenario, and the after-action report.</p>
+        </div>
+        <a class="btn btn-primary" href="/contact/">Request a Demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="/" aria-label="IronHamlet home">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#16222e"/><path d="M14 14h11v14h14V14h11v36H39V36H25v14H14z" fill="#2b7bcc"/><path d="M25 28h14v8H25z" fill="#5ea6ee"/></svg>
+          <span class="brand-name">IRONHAMLET</span>
+        </a>
+        <p style="margin-top:14px">Instructor-led industrial cybersecurity exercises on a live, PLC-controlled process.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/pilot/">Pilot Program</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="/contact/">Request a Demo</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <p class="legal">&copy; <span id="year">2026</span> IronHamlet. OpenPLC, FUXA, OpenSearch, and MITRE ATT&amp;CK are the property of their respective owners and are referenced descriptively.</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

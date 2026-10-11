@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IronHamlet">
+  <rect width="64" height="64" rx="10" fill="#0c141d"/>
+  <path d="M14 14h11v14h14V14h11v36H39V36H25v14H14z" fill="#2b7bcc"/>
+  <path d="M25 28h14v8H25z" fill="#5ea6ee"/>
+</svg>
