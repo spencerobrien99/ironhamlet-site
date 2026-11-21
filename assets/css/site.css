@@ -163,6 +163,18 @@ section { padding: 88px 0; }
 }
 .schematic figcaption { font-size: .8rem; color: var(--muted-on-dark); margin-top: 10px; font-family: var(--mono); letter-spacing: .04em; }
 
+/* ---------- Video ---------- */
+.video-section .section-head { margin-left: auto; margin-right: auto; text-align: center; }
+.video-section .lead { margin-left: auto; margin-right: auto; }
+.video-section .btn-row { justify-content: center; }
+.video-frame { margin: 0 auto; max-width: 960px; }
+.video-frame video {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+  background: var(--ink); border: 1px solid var(--line-dark); border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(12,20,29,.18);
+}
+.video-frame figcaption { font-size: .9rem; color: var(--text-muted); margin-top: 12px; text-align: center; }
+
 /* ---------- Cards & grids ---------- */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
